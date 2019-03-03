@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!-- 
+    Adriano Alves
+    Feb 21 2019
+    Berkeley Bootcamp HW1
+    Portfolio to show skills and or projects 
+    
+    code validaded at https://validator.w3.org/nu/#textarea
+ -->
+ 
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alves Contact</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <!-- <script src="main.js"></script> -->
+        <!-- Add a Favicon -->
+        <link rel="icon" href="./assets/imgages/favicon-a.ico">
+</head>
+<body>
+    <!--  
+    ******************* Header with my name and Anchors *********************
+    this div will be the logo with my name it will have a background green  
+    the logo will be place on left and anchors on the right 
+    background for header it white
+     -->
+     <header> 
+            <!-- container for all header elements to make it with width: 960px -->
+            <div class="topElements relative">
+                <!-- container for the h1 with name, this will have the background-color: #4aaaa5 -->
+                <div class="nameLogoBox absolute">
+                    <!-- H1 with name color: white -->
+                    <h1 class="nameLogo centerVertical relative">Adriano Alves</h1>
+                </div>
+    
+                <!-- container to hold the anchor tags (outter)-->
+                <div class="anchorsBox absolute">
+                    <!-- inner container, because we will have three anchors i will use anoter container  -->
+                    <!-- to make it center -->
+                    <div class="anchorsWrapper centerVertical relative">
+                        <!-- anchor to open index.html (About)-->
+                        <a href="index.html">About</a>
+                        <!-- anchor to open portofolio -->
+                        <a href="portfolio.html">Portfolio</a>
+                        <!-- anchor to open contact -->
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--
+         ***************************** Main Content **************************** 
+         This main content will have some pictures and labels on the pictures 
+        -->
+        <div class="centerContainer">
+            <div class="labelWrapper center-container-label">
+                <h2>Portfolio</h2>
+            </div>
+            <!-- horizontal hule -->
+            <hr>
+            <!-- ******************** Row and Columns holding the images **************** -->
+            <!-- First ROW -->
+            <div class="row">
+                <div class="column boxImage ">
+                    <img class="portofolio-img" src="./assets/imgages/as.png" alt="Android Studio">
+                    <h2 class="boxLabel absolute">Android</h2>
+                </div>
+
+                <div class="column boxImage ">
+                    <img class="portofolio-img" src="./assets/imgages/java.png" alt="Android Studio">
+                    <h2 class="boxLabel absolute">Java</h2>
+                </div>
+            </div>
+            <!-- Second ROW -->
+            <div class="row">
+                <div class="column boxImage">
+                    <img class="portofolio-img" src="./assets/imgages/linux.png" alt="Linux">
+                    <h2 class="boxLabel absolute">Linux Adm</h2>
+                </div>
+
+                <div class="column boxImage">
+                    <img class="portofolio-img" src="./assets/imgages/web.png" alt="WEB Developer">
+                    <h2 class="boxLabel absolute">Web Developer</h2>
+                </div>
+            </div>
+        </div>
+    <!-- ************************ Footer ********************* -->
+    <footer class="absolute">
+        <div class="footerContainer centerVertical absolute">
+            <p>copyright ©</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

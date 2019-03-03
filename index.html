@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<!-- 
+    Adriano Alves
+    Feb 21 2019
+    Berkeley Bootcamp HW1
+    index.html file to display some info about me
+
+    When you create a website, it's standard practice to code your HTML files 
+    before writing any CSS and to write up one HTML file before moving onto the next. 
+    Write your HTML semantically, too:
+    * Write a paragraph or two about yourself. Make it fun, show your personality!
+
+    code validaded at: https://validator.w3.org/#validate_by_input
+ -->
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adriano Alves</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+    <!-- <script src="main.js"></script> -->
+    <!-- Add a Favicon -->
+    <link rel="icon" href="./assets/imgages/favicon-a.ico">
+
+</head>
+<body>
+    <!--  
+    ******************* Header with my name and Anchors ********************* 
+    this div will be the logo with my name it will have a background green  
+    the logo will be place on left and anchors on the right 
+    background for header it white
+     -->
+    <header> 
+        <!-- container for all header elements to make it with width: 960px -->
+        <div class="topElements relative">
+            <!-- container for the h1 with name, this will have the background-color: #4aaaa5 -->
+            <div class="nameLogoBox absolute">
+                <!-- H1 with name color: white -->
+                <h1 class="nameLogo centerVertical relative">Adriano Alves</h1>
+            </div>
+
+            <!-- container to hold the anchor tags (outter)-->
+            <div class="anchorsBox absolute">
+                <!-- inner container, because we will have three anchors i will use anoter container  -->
+                <!-- to make it center -->
+                <div class="anchorsWrapper centerVertical relative">
+                    <!-- anchor to open index.html (About)-->
+                    <a href="index.html">About</a>
+                    <!-- anchor to open portofolio -->
+                    <a href="portfolio.html">Portofolio</a>
+                    <!-- anchor to open contact -->
+                    <a href="contact.html">Contact</a>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <!-- 
+    ******************************* Main content ******************************* 
+    this is the maincontent on the certer of the page, it will have a image
+    and 2 paragraphs. backgroun-color: white and width:960px
+    -->
+    <div class="centerContainer"> 
+        <!-- the container for th about me text used to make the H2 center-->
+        <div class="labelWrapper center-container-label" >
+            <!-- H2 with the About Me text -->
+            <h2 >About Me</h2>
+        </div>
+        <!-- horizontal hule -->
+        <hr>
+        <!-- container to hold the image and the first paragraph -->
+        <div>                
+                <!-- my image width: 150px heith: 150px -->
+                <!-- <img src="./assets/imgages/me.jpg" alt="my picture"> -->
+                <img class="about-img" src="./assets/imgages/me.jpg" alt="my picture">
+            <div>
+                <p>
+                    May the source be with you. <br>
+                    My name is Adriano I’m 39 years old and a computer science student and Mathematics Lover, 
+                    I’m excited to start my career in web development, Looking forward 
+                    to starting using all the knowledge I gained during these years at this 
+                    highway to shell. 
+                </p>
+                <p>
+                        I'm  certified Android Developer from City College of San Francisco with strong knowledge in
+                        Java SE, Jave EE, MySQL Database Administration, Oracle 12C database Administration, 
+                        Linux System Administration, Linux Network Administration,Programming Techniques for XML,
+                        Dart, Swift and some C++.
+                </p>
+            </div>
+
+            <p>
+                I am Unix command line lover and strong believe that 
+                everything it's possible until you stop believing that you can do it.
+                I love to learn new things, ride, travel and drink coffee. I also love to help debug problems, 
+                because thats the way i learn more. 
+            </p>
+        </div>
+    </div > <!-- END of centerContainer -->
+    <!-- ************************ Footer ********************* -->
+    <footer class="absolute">
+        <div class="footerContainer centerVertical absolute">
+                <p>copyright ©</p>
+        </div>
+    </footer>
+       
+</body>
+</html>
