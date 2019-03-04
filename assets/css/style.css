@@ -177,8 +177,10 @@ textarea{
 /************* boxImage ***********/
 /* used to stack the label on top of the image at portofolio.html */
 .boxImage{
-    width: 300px;
-    height: 300px;
+    /* width: 300px; */
+    width: 200px;
+    /* height: 300px; */
+    height: 200px;
     background: #fff;
     padding: 0;
     position: relative;
@@ -190,7 +192,8 @@ textarea{
 .boxLabel{
     background-color: #4aaaa5;
     color: #fff;
-    width: 300px;
+    /* width: 300px; */
+    width: 200px;
     text-align: center;
     bottom: 10%;
     padding: 0.5em 0;
@@ -284,8 +287,10 @@ portofolio.html file */
 /******* portofolio-img ******/
 /* used at portofolio.html */
 .portofolio-img{
-    width: 300px;
-    height: 300px;
+    /* width: 300px; */
+    width: 200px;
+    /* height: 300px; */
+    height: 200px;
     float: left; 
     margin: 0 10px 0 0;
 }
@@ -325,23 +330,38 @@ portofolio.html file */
 /* Change when the browser window is 960px wide or less: */
 /* if 960px > (screen width) > 768px */
 @media only screen and (max-width: 980px) {
-    body {
-        background-image: url("../images/linux.png");
+    div.centerContainer {
+        width: 600px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    div.column{
+        width: 25%;
     }
 }
 
 /* Change when the browser window is 768px wide or less: */
 /* if 768px > (screen width) > 640px */
 @media only screen and (max-width: 768px) {
-    body {
-        background-image: url("../images/java.png");
+    div.topElements{
+        width: 550px;
+        margin: auto;
+    }
+
+    div.centerContainer{
+        margin: 0;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
     }
 }
 /* Change when the browser window is 640px wide or less: */
 /* if 640px > (screen width)  */
 @media only screen and (max-width: 640px) {
-    body {
-        background-image: url("../images/web.png");
+    div.centerContainer{
+        background-color: yellowgreen;
     }
 }
 
