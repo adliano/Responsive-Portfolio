@@ -330,10 +330,14 @@ portofolio.html file */
 /* Change when the browser window is 960px wide or less: */
 /* if 960px > (screen width) > 768px */
 @media only screen and (max-width: 980px) {
+
+    div.topElements{
+        width: 95%;
+    }
+
     div.centerContainer {
-        width: 600px;
-        margin-left: 10px;
-        float: left;
+        width: 75%;
+        margin-left: 2.5%;
     }
 
     div.column{
@@ -345,13 +349,13 @@ portofolio.html file */
 /* if 768px > (screen width) > 640px */
 @media only screen and (max-width: 768px) {
     div.topElements{
-        width: 550px;
+        width: 80%;
         margin: auto;
     }
 
     div.centerContainer{
         margin: 0;
-        width: 500px;
+        width: 72%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 25px;
@@ -360,10 +364,38 @@ portofolio.html file */
 /* Change when the browser window is 640px wide or less: */
 /* if 640px > (screen width)  */
 @media only screen and (max-width: 640px) {
+
+    div.topElements{
+        width: auto;
+    }
+
+    div.anchorsBox{
+        position: unset;
+        width: auto;
+        background-color: #fff;
+    }
+
+    div.nameLogoBox{
+        position: unset;
+        width: auto;
+    }
+
     div.centerContainer{
-        background-color: yellowgreen;
+        margin-top: 85px;
+        width: 75%;
+    }
+
+    div.column{
+        clear: both;
+        margin: auto;
     }
 }
+
+
+
+
+
+
 
 
 
