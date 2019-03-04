@@ -1,6 +1,6 @@
 /* Adriano Alves
    Feb 23 2019
-   Homework 01 
+   Homework 02 
    Berkeley Bootcamp
    css file to make my portofolio website cute 
 
@@ -60,7 +60,7 @@ body{
     /* eliminate marging arround top */
     margin: 0;
     /* background required */
-    background-image: url("../imgages/vintage-concrete.png");
+    background-image: url("../images/vintage-concrete.png");
 }
 
 /******* button *******/
@@ -317,6 +317,39 @@ portofolio.html file */
     margin: auto;
     width: 960px;
 }
+
+/*************************************************************/
+/* * * * * * * * * * * Media Screen Tags * * * * * * * * * * */
+/*************************************************************/
+
+/* Change when the browser window is 960px wide or less: */
+/* if 960px > (screen width) > 768px */
+@media only screen and (max-width: 980px) {
+    body {
+        background-image: url("../images/linux.png");
+    }
+}
+
+/* Change when the browser window is 768px wide or less: */
+/* if 768px > (screen width) > 640px */
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url("../images/java.png");
+    }
+}
+/* Change when the browser window is 640px wide or less: */
+/* if 640px > (screen width)  */
+@media only screen and (max-width: 640px) {
+    body {
+        background-image: url("../images/web.png");
+    }
+}
+
+
+
+
+
+
 
 
 /* NOTES */
