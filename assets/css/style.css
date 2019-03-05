@@ -326,36 +326,50 @@ portofolio.html file */
 /*************************************************************/
 /* * * * * * * * * * * Media Screen Tags * * * * * * * * * * */
 /*************************************************************/
+/* Add on Mar 04 2019 */
 
 /* Change when the browser window is 960px wide or less: */
 /* if 960px > (screen width) > 768px */
 @media only screen and (max-width: 980px) {
 
     div.topElements{
+        /* reduce the width to 95% at top elements */
         width: 95%;
     }
 
     div.centerContainer {
+        /* reduce the main contents */
         width: 75%;
+        /* 
+        make the main content left justify
+        the topElement will have 95% of the view 
+        so to make it center i used:
+        margin = (100% - 95%)/2 = 2.5%
+        */
         margin-left: 2.5%;
     }
 
     div.column{
         width: 25%;
+        /* reduce the images paddin at portfolio.html */
+        padding: 3%;
     }
 }
 
 /* Change when the browser window is 768px wide or less: */
 /* if 768px > (screen width) > 640px */
 @media only screen and (max-width: 768px) {
+
     div.topElements{
         width: 80%;
+        /* used to center top-elements */
         margin: auto;
     }
 
     div.centerContainer{
         margin: 0;
         width: 72%;
+        /* make the main content center */
         margin-left: auto;
         margin-right: auto;
         margin-top: 25px;
@@ -370,24 +384,47 @@ portofolio.html file */
     }
 
     div.anchorsBox{
-        position: unset;
+        /*
+         remove position left to move 
+         anchors tag under label 
+         */
+        position: none;
+        /* make it center */
         width: auto;
         background-color: #fff;
     }
 
     div.nameLogoBox{
+        /* center label with my name */
         position: unset;
         width: auto;
     }
 
     div.centerContainer{
+        /* 
+        because anchors will be 
+        placed under label, 
+        it need more margin from the top 
+        */
         margin-top: 85px;
         width: 75%;
     }
 
     div.column{
-        clear: both;
+        /* center images at portfolio.html */
+        float: none;
+        /* make it center */
+        width: fit-content;
         margin: auto;
+    }
+
+    img.about-img{
+        /* 
+        remove the float of 
+        the images at index.html 
+        */
+        float: none;
+        width: 100%;
     }
 }
 
