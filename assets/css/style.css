@@ -388,7 +388,7 @@ portofolio.html file */
          remove position left to move 
          anchors tag under label 
          */
-        position: none;
+        position: unset;
         /* make it center */
         width: auto;
         background-color: #fff;
@@ -407,7 +407,8 @@ portofolio.html file */
         it need more margin from the top 
         */
         margin-top: 85px;
-        width: 75%;
+        width: 85%
+        /* width: 75%; */
     }
 
     div.column{
