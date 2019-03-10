@@ -133,8 +133,9 @@ html {
 /******* input *******/
 /* used at contact.html */
 input{
-    width: 100%;
+    background-color: #fcfcfc;
     line-height: 2;
+    width: 100%;
 }
 
 /******** paragrath ********/
@@ -146,6 +147,7 @@ p{
 /******** textarea *******/
 /* used at contact.html */
 textarea{
+    background-color: #fcfcfc;
     width: 100%;
 }
 
@@ -330,8 +332,8 @@ portofolio.html file */
 
 /* Change when the browser window is 960px wide or less: */
 /* if 960px > (screen width) > 768px */
-/*@media only screen and (max-width: 980px) {i*/
-@media (max-width: 980px) {
+@media only screen and (max-width: 980px) {i
+/* @media (max-width: 980px) { */
 
     div.topElements{
         /* reduce the width to 95% at top elements */
@@ -359,8 +361,8 @@ portofolio.html file */
 
 /* Change when the browser window is 768px wide or less: */
 /* if 768px > (screen width) > 640px */
-/*@media only screen and (max-width: 768px) {*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+/* @media (max-width: 768px) { */
 
     div.topElements{
         width: 80%;
@@ -379,8 +381,8 @@ portofolio.html file */
 }
 /* Change when the browser window is 640px wide or less: */
 /* if 640px > (screen width)  */
-/*@media only screen and (max-width: 640px) {*/
-@media (max-width: 640px) {
+@media only screen and (max-width: 640px) {
+/* @media (max-width: 640px) { */
 
     div.topElements{
         width: auto;
